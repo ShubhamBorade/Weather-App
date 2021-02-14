@@ -1,0 +1,52 @@
+.container .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background-color: aqua;
+    width:50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px greenyellow,10px 10px 10px 10px pink;
+}
+
+.container .data label{
+    margin: 20px;
+}
+.container .data input{
+    margin: 1rem ;
+    padding: 0 60px;
+}
+.container .data button{
+    margin-bottom: 15px;
+}
+
+body{
+    background:url(https://cdn.pixabay.com/photo/2016/08/24/17/09/sun-1617470__480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:auto;
+}
+
+@media (max-width:780px){
+    .container .data input{
+        padding: 0 30px;
+    }
+    .container .data h3{
+        font-size: 20px;
+    }
+    .container .data{
+        width:80%;
+    }
+}
+
+@media (max-width:500px){
+    .container .data input{
+        margin: 1rem ;
+        padding: 0 10px;
+    }
+}
+.head{
+    box-shadow: 5px 5px 5px 5px orchid;
+}
