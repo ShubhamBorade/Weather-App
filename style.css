@@ -17,6 +17,7 @@
     margin: 1rem ;
     padding: 0 60px;
     border-radius: 5px;
+    outline:none;
 }
 .container .data button{
     margin-bottom: 15px;

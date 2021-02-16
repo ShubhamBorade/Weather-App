@@ -18,7 +18,7 @@ function makeAPI() {
             let pressU=data["main"]["pressure"]
             let humdU=data["main"]["humidity"];
             // temp.innerText=data["main"]["temp"]; 
-            console.log(tempU)
+            console.log(tempU);
             temp.innerText=Math.round(tempU-273); 
             name.innerText=data["name"];
             press.innerText=(pressU/1000);
@@ -26,7 +26,7 @@ function makeAPI() {
             humd.innerText=data["main"]["humidity"];
             cont.innerText=data["sys"]["country"]
         } else {
-            console.log("error occured");
+            alert("Please check the spelling")
         }
     }
     xhr.send();
