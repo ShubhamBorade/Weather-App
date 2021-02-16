@@ -14,9 +14,15 @@ function makeAPI() {
         if (this.status === 200) {
             let data = JSON.parse(this.responseText);
             console.log(data);
-            temp.innerText=data["main"]["temp"];  
+            let tempU=data["main"]["temp"]; 
+            let pressU=data["main"]["pressure"]
+            let humdU=data["main"]["humidity"];
+            // temp.innerText=data["main"]["temp"]; 
+            console.log(tempU)
+            temp.innerText=Math.round(tempU-273); 
             name.innerText=data["name"];
-            press.innerText=data["main"]["pressure"]
+            press.innerText=(pressU/1000);
+            // press.innerText=data["main"]["pressure"]
             humd.innerText=data["main"]["humidity"];
             cont.innerText=data["sys"]["country"]
         } else {

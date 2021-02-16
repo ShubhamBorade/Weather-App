@@ -16,6 +16,7 @@
 .container .data input{
     margin: 1rem ;
     padding: 0 60px;
+    border-radius: 5px;
 }
 .container .data button{
     margin-bottom: 15px;
@@ -49,4 +50,15 @@ body{
 }
 .head{
     box-shadow: 5px 5px 5px 5px orchid;
+}
+
+footer{
+    text-align: center;
+    /* font-weight: bold; */
+    background-color: black;
+    color:white;
+}
+
+h1{
+    text-shadow: 2px 2px 5px gray;
 }
