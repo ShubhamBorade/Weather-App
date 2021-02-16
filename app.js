@@ -26,7 +26,7 @@ function makeAPI() {
             humd.innerText=data["main"]["humidity"];
             cont.innerText=data["sys"]["country"]
         } else {
-            alert("Please check the spelling")
+            alert("Please recheck the spelling")
         }
     }
     xhr.send();
